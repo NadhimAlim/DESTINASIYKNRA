@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NRA NEWS</title>
+    <link rel="stylesheet" href="./berita.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>NRA NEWS</h1>
+            <p>Cari Berita berita hangat di</p>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Video</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="" class="berita1">
+        <main>
+            <div class="article">
+                <h2>Selamat Datang Di NRA NEWS</h2>
+                <p>DiTerbitkan pada : 2015-01-21 00:00:00 WIB - Dilihat 37 Kali</p>
+                <img src="path_to_image1.jpg" alt="Escola Secundaria">
+                <p>Escola Secundaria Nino Conis Santana Gleno-Ermera merupakan Sekolah Menengah Atas berbasis kompetensi kader bangsa yang berorientasi ke depan dalam membangun bangsa dengan keunggulan...</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="article">
+                <h2>Pembangunan Dunia Pendidikan Yang Selalu Mantap</h2>
+                <p>DiTerbitkan pada : 2015-01-21 00:00:00 WIB - Dilihat 3 Kali</p>
+                <img src="path_to_image2.jpg" alt="Pembangunan Dunia Pendidikan">
+                <p>Pembangunan dunia pendidikan yang selalu mengalami perkembangan pesat seiring dengan laju perkembangan teknologi...</p>
+                <a href="#">Read More</a>
+            </div>
+        </main>
+        <aside>
+            <div class="clock">
+                <h3>Waktu Hari ini</h3>
+                <div id="clock"></div>
+            </div>
+            <div class="popular-news">
+                <h3>Berita Terpopuler</h3>
+                <ul>
+                    <li>Escola Secundaria Nino Conis Santana Gleno-Ermera - (37 kali)</li>
+                    <li>Penggunaan Laporan Akhir, Penggunaan Anggaran - (3 kali)</li>
+                    <li>Pembangunan dunia pendidikan yang selalu mantap - (3 kali)</li>
+                    <li>Pemberian Anugerah Kekayaan Intelektual Luar Biasa - (2 kali)</li>
+                </ul>
+            </div>
+            <div class="news-categories">
+                <h3>Kategori Berita</h3>
+                <ul>
+                    <li>Nasional</li>
+                    <li>Sejarah</li>
+                    <li>Teknologi</li>
+                    <li>Artis</li>
+                </ul>
+            </div>
+        </aside>
+
+    </section>
+    <footer>
+        <p>Copyright (c) 2014 - www.phpmu.com - Develop by : Robby Prihandaya</p>
+    </footer>
+    <script>
+        function updateClock() {
+            var now = new Date();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
+            var timeString = (hours < 10 ? "0" : "") + hours + ":" + (minutes < 10 ? "0" : "") + minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
+            document.getElementById('clock').textContent = timeString;
+        }
+        
+        setInterval(updateClock, 1000);
+        updateClock();
+        
+    </script>
+</body>
+</html>
